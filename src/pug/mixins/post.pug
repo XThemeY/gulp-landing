@@ -1,0 +1,19 @@
+include ../mixins/btn.pug
+
+mixin post(header, img, text)
+	.post
+		h2(class="post-header")= header
+		h4(class="post-date") December 26, 2019 — 5 comments
+		img(class="post-img" src= img, alt="")
+		p(class="post-text")= text
+		.post-nav
+			+btn("Read more","#!")(class= "btn")
+			.social-icons
+				a(href="#!").link.social-link
+					img(src="img/icons/social/whatsapp.svg", alt="").icon
+				a(href="#!").link.social-link
+					img(src="img/icons/social/instagram.svg", alt="").icon
+				a(href="#!").link.social-link
+					img(src="img/icons/social/twitter.svg", alt="").icon
+				a(href="#!").link.social-link
+					img(src="img/icons/social/facebook-f.svg", alt="").icon

@@ -1,0 +1,46 @@
+extends ../layouts/master-page.pug
+include ../mixins/post.pug
+include ../mixins/aside-post.pug
+include ../mixins/popular-post.pug
+include ../mixins/instagram.pug
+
+block variables
+	- var title = "Main Page";
+	
+block content
+	.container
+		.content
+			main.content__main
+				+post("Austin DIY sriracha polaroid sartorial la croix.", "img/posts-preview/img-01.jpg","Austin DIY sriracha polaroid sartorial la croix. Air plant vexillologist tilde listicle try-hard tousled. Drinking vinegar flexitarian tumblr, chia aesthetic lyft yuccie. Vegan jean shorts swag, single-origin coffee beard quinoa street art activated charcoal chartreuse whatever. Ramps mlkshk hammock, disrupt butcher poutine ethical prism photo booth keffiyeh franzen edison bulb hoodie master cleanse. Gastropub tofu schlitz, coloring book 3 wolf moon ennui gochujang tousled meggings hot chicken listicle. YOLO plaid fanny pack jean shorts pop-up truffaut tousled kombucha salvia whatever fixie tacos swag man bun migas.")
+				+post("Austin DIY sriracha polaroid sartorial la croix.", "img/posts-preview/img-02.jpg","Austin DIY sriracha polaroid sartorial la croix. Air plant vexillologist tilde listicle try-hard tousled. Drinking vinegar flexitarian tumblr, chia aesthetic lyft yuccie. Vegan jean shorts swag, single-origin coffee beard quinoa street art activated charcoal chartreuse whatever. Ramps mlkshk hammock, disrupt butcher poutine ethical prism photo booth keffiyeh franzen edison bulb hoodie master cleanse. Gastropub tofu schlitz, coloring book 3 wolf moon ennui gochujang tousled meggings hot chicken listicle. YOLO plaid fanny pack jean shorts pop-up truffaut tousled kombucha salvia whatever fixie tacos swag man bun migas.")
+				+post("Austin DIY sriracha polaroid sartorial la croix.", "img/posts-preview/img-03.jpg","Austin DIY sriracha polaroid sartorial la croix. Air plant vexillologist tilde listicle try-hard tousled. Drinking vinegar flexitarian tumblr, chia aesthetic lyft yuccie. Vegan jean shorts swag, single-origin coffee beard quinoa street art activated charcoal chartreuse whatever. Ramps mlkshk hammock, disrupt butcher poutine ethical prism photo booth keffiyeh franzen edison bulb hoodie master cleanse. Gastropub tofu schlitz, coloring book 3 wolf moon ennui gochujang tousled meggings hot chicken listicle. YOLO plaid fanny pack jean shorts pop-up truffaut tousled kombucha salvia whatever fixie tacos swag man bun migas.")
+				+post("Austin DIY sriracha polaroid sartorial la croix.", "img/posts-preview/img-04.jpg","Austin DIY sriracha polaroid sartorial la croix. Air plant vexillologist tilde listicle try-hard tousled. Drinking vinegar flexitarian tumblr, chia aesthetic lyft yuccie. Vegan jean shorts swag, single-origin coffee beard quinoa street art activated charcoal chartreuse whatever. Ramps mlkshk hammock, disrupt butcher poutine ethical prism photo booth keffiyeh franzen edison bulb hoodie master cleanse. Gastropub tofu schlitz, coloring book 3 wolf moon ennui gochujang tousled meggings hot chicken listicle. YOLO plaid fanny pack jean shorts pop-up truffaut tousled kombucha salvia whatever fixie tacos swag man bun migas.")
+				+post("Austin DIY sriracha polaroid sartorial la croix.", "img/posts-preview/img-05.jpg","Austin DIY sriracha polaroid sartorial la croix. Air plant vexillologist tilde listicle try-hard tousled. Drinking vinegar flexitarian tumblr, chia aesthetic lyft yuccie. Vegan jean shorts swag, single-origin coffee beard quinoa street art activated charcoal chartreuse whatever. Ramps mlkshk hammock, disrupt butcher poutine ethical prism photo booth keffiyeh franzen edison bulb hoodie master cleanse. Gastropub tofu schlitz, coloring book 3 wolf moon ennui gochujang tousled meggings hot chicken listicle. YOLO plaid fanny pack jean shorts pop-up truffaut tousled kombucha salvia whatever fixie tacos swag man bun migas.")
+			aside.content__aside
+				h3.aside__block-header
+					|Recent posts
+				+aside-post("Austin DIY sriracha polaroid sartorial la croix.")(style= "background:no-repeat center/cover url('img/small-thumbs/01.jpg')")
+				+aside-post("Austin DIY sriracha polaroid sartorial la croix.")(style= "background:no-repeat center/cover url('img/small-thumbs/02.jpg')")
+				+aside-post("Austin DIY sriracha polaroid sartorial la croix.")(style= "background:no-repeat center/cover url('img/small-thumbs/03.jpg')")
+				+aside-post("Austin DIY sriracha polaroid sartorial la croix.")(style= "background:no-repeat center/cover url('img/small-thumbs/04.jpg')")
+				+aside-post("Austin DIY sriracha polaroid sartorial la croix.")(style= "background:no-repeat center/cover url('img/small-thumbs/05.jpg')")
+				h3.aside__block-header
+					|Popular posts
+				+popular-post("Austin DIY sriracha polaroid sartorial la croix.")(style= "background:no-repeat center/cover url('img/small-thumbs/01.jpg')")
+				+popular-post("Austin DIY sriracha polaroid sartorial la croix.")(style= "background:no-repeat center/cover url('img/small-thumbs/02.jpg')")
+				+popular-post("Austin DIY sriracha polaroid sartorial la croix.")(style= "background:no-repeat center/cover url('img/small-thumbs/03.jpg')")
+				+popular-post("Austin DIY sriracha polaroid sartorial la croix.")(style= "background:no-repeat center/cover url('img/small-thumbs/04.jpg')")
+				+popular-post("Austin DIY sriracha polaroid sartorial la croix.")(style= "background:no-repeat center/cover url('img/small-thumbs/05.jpg')")
+				h3.aside__block-header
+					|Instagram
+				.aside-posts--instagram
+					+instagram('#!','img/instagram/insta-01.jpg')
+					+instagram('#!','img/instagram/insta-02.jpg')
+					+instagram('#!','img/instagram/insta-03.jpg')
+					+instagram('#!','img/instagram/insta-04.jpg')
+					+instagram('#!','img/instagram/insta-05.jpg')
+					+instagram('#!','img/instagram/insta-06.jpg')
+					+instagram('#!','img/instagram/insta-07.jpg')
+					+instagram('#!','img/instagram/insta-08.jpg')
+					+instagram('#!','img/instagram/insta-09.jpg')
+					+instagram('#!','img/instagram/insta-10.jpg')

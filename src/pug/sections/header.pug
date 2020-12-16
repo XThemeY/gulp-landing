@@ -1,0 +1,16 @@
+include ../mixins/btn.pug
+
+.header
+	.header__content
+		.social-icons
+			a(href="#!").link.social-link
+				img(src="img/icons/social/instagram.svg", alt="").icon
+			a(href="#!").link.social-link
+				img(src="img/icons/social/twitter.svg", alt="").icon
+			a(href="#!").link.social-link
+				img(src="img/icons/social/facebook-f.svg", alt="").icon
+		h1.header-logo Hipsum Blog
+		.header__options
+			a(href="#!").link.header__options-link
+				img(src="img/icons/search.svg", alt="").icon
+			+btn("Subscribe","#!")(class= "btn subscribe-btn header__options-link")
