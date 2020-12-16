@@ -1,10 +1,12 @@
 include ../mixins/btn.pug
 
-mixin post(header, img, text)
+mixin post(link, header, img, text)
 	.post
-		h2(class="post-header")= header
+		a(href= link)
+			h2(class="post-header")= header
 		h4(class="post-date") December 26, 2019 — 5 comments
-		img(class="post-img" src= img, alt="")
+		a(href= link)
+			img(class="post-img" src= img, alt="")
 		p(class="post-text")= text
 		.post-nav
 			+btn("Read more","#!")(class= "btn")
