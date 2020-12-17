@@ -38,6 +38,7 @@ p {
 
 a {
     text-decoration: none;
+    display: block;
 }
 
 img {
@@ -56,42 +57,4 @@ img {
     content: "";
     display: table;
     clear: both;
-}
-
-.icon {
-    width: 25px;
-    height: 25px;
-    transition: 0.5s ease-in;
-    &:hover {
-        opacity: 0.5;
-    }
-}
-
-.btn {
-    background-color: $btn-main-color;
-    height: 44px;
-    padding: 0 30px;
-    border-radius: 6px;
-    font-family: $montserrat;
-    font-size: 1.2rem;
-    letter-spacing: 1.24px;
-    color: $btn-text-color;
-    text-align: center;
-    line-height: 44px;
-    text-transform: uppercase;
-    transition: 0.5s ease-in;
-
-    &:hover {
-        background-color: $btn-main-color-hover;
-    }
-}
-
-.social-icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .social-link + .social-link {
-        margin-left: 35px;
-    }
 }

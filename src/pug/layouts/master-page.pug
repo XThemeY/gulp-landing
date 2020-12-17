@@ -1,3 +1,5 @@
+include ./mixins.pug
+
 <!DOCTYPE html>
 block variables
 
@@ -9,11 +11,9 @@ html(lang="ru")
 		link(rel="stylesheet", href="css/main.css")
 		title #{title}
 	body
-		include ../sections/header.pug
 
 		block content
 		
-		include ../sections/footer.pug
 		script(src="js/main.js")
 
 		

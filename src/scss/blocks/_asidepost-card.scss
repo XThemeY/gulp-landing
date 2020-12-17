@@ -1,0 +1,45 @@
+.aside-post {
+    margin-top: 40px;
+    border-bottom: solid 1px #dde2e7;
+}
+
+.aside__block-header {
+    font-family: $montserrat;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 25px 0;
+    border-top: solid 1px #dde2e7;
+    border-bottom: solid 1px #dde2e7;
+}
+
+.aside-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 25px;
+
+    &:hover {
+        border: solid 1px black;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.aside-posts--instagram {
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .aside-img--instagram {
+        margin-bottom: 30px;
+
+        &:nth-last-child(-n + 2) {
+            margin-bottom: 0;
+        }
+    }
+}

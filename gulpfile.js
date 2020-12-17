@@ -22,7 +22,7 @@ gulp.task('pug', function () {
 			})
 		}))
 		.pipe(pug({
-			pretty: true
+			pretty: '\t'
 		}))
 		.pipe(gulp.dest('./build/'))
 		.pipe(browserSync.stream())

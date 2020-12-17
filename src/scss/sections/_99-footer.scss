@@ -1,0 +1,24 @@
+.footer {
+    min-width: 1170px;
+    margin: 0 auto;
+    padding: 55px 0 0;
+    background-color: #dde2e7;
+    font-family: $montserrat;
+    font-weight: 500;
+}
+
+.footer__content {
+    margin-bottom: 85px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 140px;
+}
+
+.footer-copyright {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #b7babe;
+    background-color: #e8ebee;
+}

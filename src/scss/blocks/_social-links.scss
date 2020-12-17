@@ -1,0 +1,22 @@
+.icon {
+    width: 25px;
+    height: 25px;
+    transition: 0.2s ease-in;
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .social-link + .social-link {
+        margin-left: 35px;
+    }
+}
+
+.footer-icons {
+    align-items: flex-start;
+}
